@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda EduKids</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .icon-box {
+      height: 100px;
+      border-radius: 20px;
+      background-color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav .nav-link {
+      color: #777;
+    }
+
+    .bottom-nav .nav-link.active {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body class="bg-light pb-5">
+
+  <!-- Header -->
+  <div class="container pt-3 px-4 d-flex justify-content-between align-items-center">
+    <input type="text" class="form-control me-2" placeholder="Search">
+    <i class="bi bi-person-circle fs-3"></i>
+  </div>
+
+  <!-- Grid Menu -->
+  <div class="container mt-4">
+    <div class="row g-3">
+      <div class="col-6">
+        <div class="icon-box">Menu 1</div>
+      </div>
+      <div class="col-6">
+        <div class="icon-box">Menu 2</div>
+      </div>
+      <div class="col-6">
+        <div class="icon-box">Menu 3</div>
+      </div>
+      <div class="col-6">
+        <div class="icon-box">Menu 4</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav d-flex justify-content-around py-2">
+    <a href="#" class="nav-link active text-center">
+      <i class="bi bi-house-door fs-4"></i><br>Home
+    </a>
+    <a href="#" class="nav-link text-center">
+      <i class="bi bi-list-task fs-4"></i><br>Menu
+    </a>
+    <a href="#" class="nav-link text-center">
+      <i class="bi bi-person fs-4"></i><br>Profil
+    </a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
