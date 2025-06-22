@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Jelaskan konsep dasar OOP!"
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Apa perbedaan antara HTTP dan HTTPS?"
+  }
+]

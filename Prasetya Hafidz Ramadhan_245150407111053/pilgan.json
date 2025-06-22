@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Apa hasil dari 2 + 2?",
+    "opsi": ["1", "2", "4", "5"],
+    "jawaban": "4"
+  }
+]
