@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduKids</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+  <div class="container px-3" id="loginPage">
+    <div class="card p-4 shadow-sm border-0" style="max-width: 360px; margin: auto;">
+      <div class="text-center">
+        <div class="rounded-circle bg-secondary" style="width: 80px; height: 80px; margin: 0 auto 1rem;"></div>
+        <h2 class="mb-4">EduKids</h2>
+      </div>
+      <input type="email" class="form-control mb-3" placeholder="Email" id="email">
+      <input type="password" class="form-control mb-4" placeholder="Password" id="password">
+      <button class="btn btn-outline-dark w-100" onclick="login()">Sign In</button>
+    
+
+    </div>
+  </div>
+
+  <div class="container d-none d-flex flex-column justify-content-center align-items-center vh-100 text-center" id="choosePage">
+    <h4 class="mb-4 text-center">Masuk sebagai:</h4>
+    <div class="d-grid gap-3" style="max-width: 300px; width: 100%;">
+      <button class="btn btn-outline-dark" onclick="alert('Login sebagai Guru')">GURU</button>
+      <button class="btn btn-outline-dark" onclick="alert('Login sebagai Murid')">MURID</button>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function login() {
+      document.getElementById('loginPage').classList.add('d-none');
+      document.getElementById('choosePage').classList.remove('d-none');
+
+      document.body.classList.remove('align-items-center', 'vh-100');
+      document.body.classList.add('py-4');
+    }
+  </script>
+
+</body>
+</html>
